@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/main.scss">
+    <script src="https://kit.fontawesome.com/b8521ddd77.js" crossorigin="anonymous"></script>
+    <title>RobertoDeveloper00</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="container header__navbar">
+            <a href="index.html"><img src="../img/SVG/Logo Header.svg" alt="Logo" class="portfolio-header__logo"></a>
+            <ul class="header__nav">
+                <li><a href="#about">about</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__video-container">
+            <video autoplay loop muted class="header__video-bg">
+                <source src="../img/vids/hero__bg compressed 1280x720.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <h1 class="container header__hero-element">Roberto<span class="header__hero-element--span1">Developer<span class="header__hero-element--span2">00</span></span></h1>
+    </header>
+
+    <main>
+        <section id="about" class="about container sectionPaddingY ">
+            <h2 class="about__heading">about</h2>
+
+            <div class="about__content">
+                <p>I'm a Junior Front-End Developer and a Senior Multimedia Wizard.</p>
+
+                <p>Passionate about making a contribution by crafting deliberate 
+                and well designed code that'll provide an optimal experience for 
+                all my clients alike. Users, managers and fellow developers.</p>
+            </div>
+
+            <div class="about__content--grid">
+                <div class="video-container">
+                    <video id="about-video" class="about-video playing" autoplay loop muted src="../img/vids/about__gif compressed 480x690.mp4"></video>
+                    
+                    <p class="about-video__tag about-video__tag--pause hidden">pause</p>
+                    <p class="about-video__tag about-video__tag--play hidden">play</p>
+                </div>
+                <div class="about__content">
+                    <h4 class="about__sub-heading">some of my work experiences include:</h4>
+                    <li class="about__code icon">Coding front-end pages with existing designs.</li>
+                    <li class="about__design icon">Graphic design gigs mostly around Web Design. Working with Brand Guidelines.</li>
+                    <li class="about__video icon">Video post-production including editing, motion graphics and sound design.</li>
+                    <li class="about__people icon">Customer service, written, spoken, in-person. Which allows me to be effective and empathetic in my communications.</li>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+@use 'base';
+
+// NavBar
+.portfolio-header {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(base.$dark-color, 1) 0 5%,
+      rgba(base.$dark-color, 0.4) 100%
+    ),
+    url(../../img/Portfolio-Hero.jpg) no-repeat top 60% right/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  // NavBar
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+  }
+
+  &__logo {
+    height: 8rem;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 5rem;
+    font-size: 2rem;
+  }
+
+  // Hero element
+  &__hero-element {
+    font-weight: 100;
+    font-size: 6rem;
+    margin-bottom: 5vh;
+    text-align: start;
+  }
+}
+
+// Styling the projects
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  outline-style: solid;
+  outline-color: rgba($color: base.$light-color, $alpha: 0.2);
+  outline-width: 2px;
+  outline-offset: 20px;
+  margin-bottom: 8rem;
+
+  img {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  h2 {
+    font-family: base.$paragraph-font;
+    font-weight: 900;
+    font-size: 3rem;
+  }
+
+  span {
+    color: base.$secondary-color;
+  }
+
+  &__cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    img {
+      transition: all 0.3s ease-in;
+    }
+
+    p {
+      font-family: base.$heading-font;
+      font-size: 3rem;
+      color: base.$primary-color;
+      position: absolute;
+      z-index: 20;
+      visibility: hidden;
+      transition: all 0.2s ease-in;
+    }
+  }
+
+  &__cover:hover img {
+    filter: brightness(20%);
+  }
+
+  &__cover:hover p {
+    visibility: visible;
+  }
+}

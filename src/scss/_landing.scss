@@ -1,0 +1,151 @@
+@use 'base';
+
+// HEADER SECTION
+// NavBar
+.header {
+  height: 100vh;
+  width: 100%;
+  background-color: base.$dark-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+
+  // NavBar
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+    z-index: 2;
+  }
+
+  &__logo {
+    height: 8rem;
+    z-index: 2;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 5rem;
+    font-size: 2rem;
+    z-index: 2;
+  }
+
+  // Video background
+  &__video-container {
+    position: absolute;
+    width: 100%;
+  }
+
+  &__video-bg {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+  }
+
+  // Hero element
+  &__hero-element {
+    font-weight: 100;
+    font-size: 10rem;
+    margin-bottom: 15vh;
+    z-index: 2;
+
+    &--span1 {
+      display: flex;
+      align-items: flex-start;
+      margin-left: 0.5rem;
+      font-size: 5.6rem;
+      color: base.$secondary-color;
+    }
+
+    &--span2 {
+      font-size: 9.5rem;
+      margin-top: -1rem;
+      color: base.$primary-color;
+    }
+  }
+}
+
+// ABOUT SECTION
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  &__heading {
+    color: base.$primary-color;
+  }
+
+  &__sub-heading {
+    color: base.$secondary-color;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &--grid {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      column-gap: 2rem;
+
+      & video {
+        width: 90%;
+        outline-style: solid;
+        outline-color: rgba($color: base.$light-color, $alpha: 0.2);
+        outline-width: 2px;
+        outline-offset: 8px;
+      }
+    }
+  }
+  &__code {
+    &::before {
+      content: '\f121';
+      margin-right: 1rem;
+      font-size: 3rem;
+    }
+  }
+
+  &__video::before {
+    content: '\f03d';
+    margin-right: 1rem;
+    font-size: 3rem;
+  }
+
+  &__design::before {
+    content: '\f5ad';
+    margin-right: 1rem;
+    font-size: 3rem;
+  }
+
+  &__people::before {
+    content: '\f086';
+    margin-right: 1rem;
+    font-size: 3rem;
+  }
+}
+
+// Video Play and Pause
+.video-container {
+  position: relative;
+}
+
+.about-video {
+  &__tag {
+    font-size: 2rem;
+    font-family: base.$heading-font;
+    font-weight: 900;
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}

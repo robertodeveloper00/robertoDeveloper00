@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+// VARIABLES
+// Colors
+$primary-color: #dd8c43;
+$secondary-color: #688aa5;
+$dark-color: #242628;
+$light-color: #e4e6ea;
+
+// Fonts
+$heading-font: 'Major Mono Display';
+$paragraph-font: 'Raleway';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $paragraph-font;
+  font-size: 1.3rem;
+  color: $light-color;
+  background-color: $dark-color;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $heading-font;
+}
+
+h1 {
+  font-size: 8rem; // 40 at tablet, 32 at phone
+}
+
+h2 {
+  font-size: 6rem; // 32 at tablet, 26 at phone
+}
+
+h3 {
+  font-size: 2.5rem; // 24 at tablet, 22 at phone
+}
+
+h4 {
+  font-size: 1.8rem; // 18 at every point
+}
+
+a {
+  text-decoration: none;
+  color: $light-color;
+  transition: all 0.1s ease-in-out;
+}
+
+a:hover {
+  color: $primary-color;
+}
+
+li {
+  list-style: none;
+}
+
+// Utilities
+.container {
+  width: 85%;
+  min-height: min-content;
+  margin: 0 auto;
+}
+
+.projects-container {
+  width: 50%;
+  min-height: min-content;
+  margin: 0 auto;
+}
+
+.sectionPaddingX {
+  padding: 0 3rem;
+}
+
+.sectionPaddingY {
+  padding: 4rem 0;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon::before {
+  display: inline-block;
+  color: $light-color;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
