@@ -83,19 +83,3 @@ li {
 .sectionPaddingY {
   padding: 4rem 0;
 }
-
-.icon {
-  display: flex;
-  align-items: center;
-}
-
-.icon::before {
-  display: inline-block;
-  color: $light-color;
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-}
